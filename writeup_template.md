@@ -129,6 +129,7 @@ I used this training data for training the model. The validation set helped dete
 ![alt text][image1]
 
 I found the ideal number of epochs by first running it on large number of epochs and seeing the decrease of loss. The following graph shows the result.
+
 ![alt text][image2]
 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
