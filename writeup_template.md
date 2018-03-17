@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
-* train_car.py containing the script to create and train the model
+* model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md or writeup_report.pdf summarizing the results
@@ -37,25 +37,25 @@ python drive.py model.h5
 
 #### 3. Submission code is usable and readable
 
-The train_car.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ### Model Architecture and Training Strategy
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 5x5 filter sizes and depths of 24 to 64 (train_car.py lines 66-70) 
+My model consists of a convolution neural network with 5x5 filter sizes and depths of 24 to 64 (model.py lines 66-70) 
 
 The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer (code line 64). 
 
 #### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (train_car.py lines 71,77). 
+The model contains dropout layers in order to reduce overfitting (model.py lines 71,77). 
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 86). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (train_car.py line 85).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 85).
 
 #### 4. Appropriate training data
 
