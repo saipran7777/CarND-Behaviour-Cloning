@@ -108,9 +108,6 @@ The final model architecture (train_car.py lines 18-24) consisted of a convoluti
 |						|												|
  
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
-
-![alt text][image1]
 
 #### 3. Creation of the Training Set & Training Process
 
@@ -130,6 +127,9 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by the following the image.
 
 ![alt text][image1]
+
 I found the ideal number of epochs by first running it on large number of epochs and seeing the decrease of loss. The following graph shows the result.
+
 ![alt text][image2]
+
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
